@@ -2,16 +2,19 @@ h1{
     font-family: sans-serif;
     font-size: 700%;
     color:white;
+    text-align: center;
+    margin: 0;
+    padding-bottom: 5%;
+    padding-top: 5%;
 }
 body {
-    height: 100vh;
+    height: 50vh;
     width: 100vw;
     display: grid;
     background-color: black;
     margin: 0;
     place-items: center;
     overflow: hidden;
-    
 }
 
 
@@ -42,5 +45,5 @@ body {
 }
 
 #wrapper > .shape:nth-child(3){
-    size:200%;
+    top:
 }
