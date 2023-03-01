@@ -13,8 +13,19 @@ body {
     overflow: hidden;
 }
 
+
 #wrapper {
     aspect-ratio: 1.62;
     width: 90vmin;
     background-color: white;
   }
+
+#wrapper > .shape {
+    height:15%;
+    width:15%;
+    background-color:darksalmon;
+    position: absolute;
+    transition: left, top, height, width, border-radius;
+    transition-duration: 300ms;
+    transition-timing-function: ease-in-out;
+}
