@@ -11,6 +11,7 @@ body {
     margin: 0;
     place-items: center;
     overflow: hidden;
+    
 }
 
 
@@ -18,6 +19,7 @@ body {
     aspect-ratio: 1.62;
     width: 90vmin;
     background-color: white;
+    position: relative;
   }
 
 #wrapper > .shape {
@@ -28,4 +30,17 @@ body {
     transition: left, top, height, width, border-radius;
     transition-duration: 300ms;
     transition-timing-function: ease-in-out;
+}
+
+#wrapper > .shape:nth-child(1){
+    top:0%;
+    left:0%;
+}
+#wrapper > .shape:nth-child(2){
+    top:0%;
+    right:0%;
+}
+
+#wrapper > .shape:nth-child(3){
+    size:200%;
 }
