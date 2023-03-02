@@ -11,7 +11,7 @@ body {
     height: 50vh;
     width: 100vw;
     display: grid;
-    background-color: black;
+    background-color: #0F0E0E;
     margin: 0;
     place-items: center;
     overflow: hidden;
@@ -19,9 +19,8 @@ body {
 
 
 #wrapper {
-    aspect-ratio: 1.62;
-    width: 90vmin;
-    background-color: white;
+    aspect-ratio: 1.7;
+    width: 80vmin;
     position: relative;
   }
 
@@ -36,14 +35,47 @@ body {
 }
 
 #wrapper > .shape:nth-child(1){
-    top:0%;
-    left:0%;
+    top: 0%;
+    left: 0%;
+    background-color: #883955;
+    z-index: 2;
+    height:80%;
+    width:20%;
+    border-radius: 8rem;
 }
 #wrapper > .shape:nth-child(2){
     top:0%;
-    right:0%;
+    left:21%;
+    background-color: #E6ADEC;
+    z-index: 2;
+    height:60%;
+    width:20%;
+    border-radius: 8rem;
 }
-
 #wrapper > .shape:nth-child(3){
-    top:
+    top: 0%;
+    left: 42%;
+    background-color: #EFB9CB;
+    z-index: 1;
+    height:68%;
+    width:10%;
+    border-radius: 8rem;
+}
+#wrapper > .shape:nth-child(4){
+    top: 0%;
+    left: 53%;
+    background-color: #EECFD4;
+    z-index: 2;
+    height:82%;
+    width:22%;
+    border-radius: 8rem;
+}
+#wrapper > .shape:nth-child(5){
+    top: 10%;
+    left: 76%;
+    background-color: #F3F9D2;
+    z-index: 2;
+    height:80%;
+    width:20%;
+    border-radius: 8rem;
 }
