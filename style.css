@@ -51,7 +51,7 @@ body {
 #wrapper > .shape:nth-child(3){
     
     background-color: #F4D35E;
-    z-index: 2;
+    z-index: 1;
 }
 #wrapper > .shape:nth-child(4){
     
@@ -129,13 +129,46 @@ body {
     height:30%;
     width:50%;
 }
+#wrapper[data-configuration='3'] > .shape:nth-child(1){
+    top: 10%;
+    left: 10%;
+    height:50%;
+    width: 30%;
+}
+#wrapper[data-configuration='3'] > .shape:nth-child(2){
+    top:60%;
+    left:10%;
+    height: 40%;
+    width:30%;
+}
+
+#wrapper[data-configuration='3'] > .shape:nth-child(3){
+    top:10%;
+    left:30%;
+    height:50%;
+    width:35%;
+}
+
+#wrapper[data-configuration='3'] > .shape:nth-child(4){
+    top:10%;
+    left:65%;
+    height:50%;
+    width:25%;
+}
+
+#wrapper[data-configuration='3'] > .shape:nth-child(5){
+    top:60%;
+    left:40%;
+    height:40%;
+    width:50%;
+}
 
 
 #wrapper[data-roundness="1"] > .shape {   
     border-radius: 8rem; 
 }
 #wrapper[data-roundness="2"] > .shape {   
-    border-radius: 3rem; 
+    border-radius: 0rem; 
 }
 
 

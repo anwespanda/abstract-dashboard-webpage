@@ -14,8 +14,9 @@ const combinations = [
   { configuration: 1, roundness: 1 },
   { configuration: 1, roundness: 2 },
   { configuration: 2, roundness: 1 },
-  { configuration: 2, roundness: 2 }
-  
+  { configuration: 2, roundness: 2 },
+  { configuration: 3, roundness: 1 },
+  { configuration: 3, roundness: 2 }
 ];
 
 let prev = 0;
