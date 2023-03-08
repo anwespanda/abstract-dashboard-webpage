@@ -1,6 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400&display=swap');
 h1{
-    font-family: 'Josefin Sans', sans-serif;;
     font-size: 8rem;
     font-weight:100;
     color:white;
@@ -11,6 +10,7 @@ h1{
     letter-spacing: 10px;
 }
 body {
+    font-family: 'Josefin Sans', sans-serif;
     height: 50vh;
     min-height:40vh;
     width:100%;
@@ -182,19 +182,23 @@ body {
   }
 
 #popup-container{
-    position: fixed;
+    position: absolute;
     top:40%;
     left:50%;
     transform: translate(-50%, -50%);
     width: 60vmin;
     padding: 50px;
     box-shadow: 0 5px 30px rgba(0, 0, 0, .30);
-    background: #FFF;
-    z-index: 3;
+    background: #fff1f5; 
+    border-radius: 1rem;
     aspect-ratio: 1.68;
     visibility: hidden;
     opacity: 0;
+    overflow: auto;
     transition: 0.5s;
+    font-size: 2rem;
+    filter:blur(0px);
+    z-index: 2;
 }
 
 #popup-container.active{
@@ -204,8 +208,17 @@ body {
     transition: 0.5s;
 }
 
-#wrapper.active{
+#wrapper.active > :not(#popup-container){
     filter:blur(20px);
     pointer-events: none;
     user-select: none;
+}
+a#close{
+    position:relative;
+    padding:20px 20px;
+    display: inline-block;
+    margin-top: 20px;
+    text-decoration: none;
+    color: #fff1f5;
+    background: #111;
 }
