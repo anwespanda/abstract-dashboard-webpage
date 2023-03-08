@@ -2,6 +2,8 @@ const wrapper = document.getElementById("wrapper");
 
 const rand = (min, max) => Math.floor(Math.random() * (max - min + 1) + min);
 
+const popup = document.getElementById('popup-container');
+
 const uniqueRand = (min, max, prev) => {
   let next = prev;
   
@@ -30,3 +32,8 @@ setInterval(() => {
   
   prev = index;
 }, 3000);
+
+function toggle(){
+  wrapper.classList.toggle('active');
+  popup.classList.toggle('active');
+}
