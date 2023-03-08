@@ -33,7 +33,7 @@ body {
     width:15%;
     background-color:darksalmon;
     position: absolute;
-    transition: left, top, height, width, border-radius;
+    transition: left, top, height, width, border-radius, filter;
     transition-duration: 750ms;
     transition-timing-function:ease-in-out;
 }
@@ -181,7 +181,7 @@ body {
     z-index: 1;
   }
 
-#popup-container{
+.popup{
     position: absolute;
     top:40%;
     left:50%;
@@ -197,11 +197,10 @@ body {
     overflow: auto;
     transition: 0.5s;
     font-size: 1.2rem;
-    filter:blur(0px);
     z-index: 2;
 }
 
-#popup-container.active{
+.popup.active{
     top:50%;
     visibility: visible;
     opacity: 1;
@@ -210,10 +209,11 @@ body {
 
 #wrapper.active > :not(#popup-container){
     filter:blur(20px);
+    transition: filter 0.3s ease-out;
     pointer-events: none;
     user-select: none;
 }
-a#close{
+a.close{
     position:relative;
     padding:20px 20px;
     display: inline-block;

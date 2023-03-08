@@ -11,35 +11,55 @@
     <h1>ANWES PANDA</h1>
     <div id = "wrapper" data-configuration="2" data-roundness="2">
         <div class="shape">
-            <a href="#" onclick="toggle()">
-                <span class="link"></span>
+            <a href="#" onclick="toggle('modal1')">
+                <span class="link" data-modal="modal1"></span>
             </a>
         </div>
         <div class="shape">
-            <a href="https:/anwespanda.com/">
-                <span class="link"></span>
+            <a href="#" onclick="toggle('modal2')">
+                <span class="link" data-modal="modal2"></span>
             </a>
         </div>
         <div class="shape">
-            <a href="https:/anwespanda.com/">
-                <span class="link"></span>
+            <a href="#" onclick="toggle('modal3')">
+                <span class="link" data-modal="modal3"></span>
             </a>
         </div>
         <div class="shape">
-            <a href="https:/anwespanda.com/">
-                <span class="link"></span>
+            <a href="#" onclick="toggle('modal4')">
+                <span class="link" data-modal="modal4"></span>
             </a>
         </div>
         <div class="shape">
-            <a href="https:/anwespanda.com/">
-                <span class="link"></span>
+            <a href="#" onclick="toggle('modal5')">
+                <span class="link" data-modal="modal5"></span>
             </a>
         </div>
         <div id = popup-container>
-            <div class = "popup">
-                <h2> Some heading here </h2>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Qui nihil dolorem, ad soluta sit, voluptate quos facere magnam officia quidem dignissimos ut ipsum, reprehenderit quae ex sequi facilis voluptatum ea.</p>
-                <a href="#" id = "close" onclick="toggle()">Close</a>
+            <div class="popup" id="modal1">
+                <h2>Modal 1</h2>
+                <p>This is the content for modal 1</p>
+                <a href="#" class="close" onclick="toggle('modal1')">Close</a>
+            </div>
+            <div class="popup" id="modal2">
+                <h2>Modal 2</h2>
+                <p>This is the content for modal 2</p>
+                <a href="#" class="close" onclick="toggle('modal2')">Close</a>
+            </div>
+            <div class="popup" id="modal3">
+                <h2>Modal 3</h2>
+                <p>This is the content for modal 3</p>
+                <a href="#" class="close" onclick="toggle('modal3')">Close</a>
+            </div>
+            <div class="popup" id="modal4">
+                <h2>Modal 4</h2>
+                <p>This is the content for modal 4</p>
+                <a href="#" class="close" onclick="toggle('modal4')">Close</a>
+            </div>
+            <div class="popup" id="modal5">
+                <h2>Modal 5</h2>
+                <p>This is the content for modal 5</p>
+                <a href="#" class="close" onclick="toggle('modal5')">Close</a>
             </div>
         </div>
     </div>
